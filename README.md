@@ -6,9 +6,9 @@ Single Page Application (SPA) modern untuk platform simulasi dan evaluasi otomat
 
 ## Deployment & Repository Links
 
-- **Backend Repository**: [Link GitHub Backend](https://www.google.com/search?q=isi_link_github_backend_disini)
-- **Live Demo (Frontend)**: [Link Live Demo Vercel](https://www.google.com/search?q=isi_link_live_demo_frontend_disini)
-- **Production API Base URL**: [Link Production API Backend](https://www.google.com/search?q=isi_link_production_api_disini)
+- **Backend Repository**: [Link GitHub Backend](https://github.com/fbari687/ielts-speaking-backend)
+- **Live Demo (Frontend)**: [Link Live Demo Vercel](https://ielts-speaking-roan.vercel.app)
+- **Production API Base URL**: [Link Production API Backend](https://ielts.fbariaja.my.id)
 
 ---
 
@@ -115,7 +115,8 @@ Untuk mendeploy project ini ke hosting platform statis seperti **Vercel**:
     Perintah ini akan mengompilasi seluruh asset ke direktori `dist/`.
 2.  **SPA Routing Configuration (`vercel.json`)**:
     Karena Vue Router menggunakan mode HTML5 History, konfigurasi routing rewrite berikut telah disertakan pada root project agar navigasi URL langsung atau refresh halaman tidak menghasilkan error 404:
-    ```json
+
+    ````json
     {
     "rewrites": [
     {
@@ -126,6 +127,8 @@ Untuk mendeploy project ini ke hosting platform statis seperti **Vercel**:
     }
 
         ```
+
+    ````
 
 3.  **Environment Variable di Hosting**:
     Pastikan mendaftarkan kedua environment variable berikut pada dashboard hosting (misal: Vercel Project Settings > Environment Variables):
