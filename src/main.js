@@ -1,13 +1,12 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+import router from "./router";
+
 import "./style.css";
 
-// PrimeVue
 import PrimeVue from "primevue/config";
 import Aura from "@primeuix/themes/aura";
 import ToastService from "primevue/toastservice";
-
-// PrimeIcons
 import "primeicons/primeicons.css";
 
 const app = createApp(App);
@@ -23,5 +22,6 @@ app.use(PrimeVue, {
 });
 
 app.use(ToastService);
+app.use(router);
 
 app.mount("#app");
