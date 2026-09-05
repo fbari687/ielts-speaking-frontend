@@ -1,5 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+import "./style.css";
 
 // PrimeVue
 import PrimeVue from "primevue/config";
